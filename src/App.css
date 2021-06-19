@@ -1,4 +1,20 @@
+body[data-aos-duration='4000'] [data-aos], [data-aos][data-aos][data-aos-duration='4000']{
+    transition-duration: 4000ms;
+  }
+
 .lg{
     display: flex;
     justify-content: center;
+}
+
+.display{
+
+ margin-bottom: 20px;
+ display: flex;
+ justify-content: center;
+ color: rgb(141, 141, 141);
+}
+
+.icon{
+    height: 50px;
 }

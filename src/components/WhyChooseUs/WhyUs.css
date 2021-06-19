@@ -1,0 +1,41 @@
+
+#main{
+    display: flex;
+    justify-content: space-around;
+}
+#h1{
+    display: flex;
+    margin-left: 150px;
+    width: 200px;
+    justify-content: center;
+    margin-bottom: 50px;
+    color: rgb(0, 102, 255);
+}
+
+#par{
+    display:flex;
+    justify-content: flex-start;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    text-align: center;
+    width: 400px;
+    font-size: 20px;
+}
+#2{
+    display: flex;
+    justify-content: flex-start;
+    
+    
+}
+.why_us_container{
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+     margin-right: -300px;
+    width: 100%;
+    text-align: center;
+}
+
+.par_container{
+  
+}

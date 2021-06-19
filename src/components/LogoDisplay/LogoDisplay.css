@@ -1,3 +1,13 @@
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
 .image_div {
   box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8),
     -12px 0 8px -4px rgba(31, 73, 125, 0.8);
@@ -5,6 +15,9 @@
  border-bottom: 20%;
  margin-top: 150px;
  background-color: rgb(241, 239, 239);
+ animation: fadeInAnimation ease 3s;
+ animation-iteration-count: 1;
+ animation-fill-mode: forwards;
 }
 .img_div:hover {
   transform: scale(1.2);
@@ -18,18 +31,21 @@
   font-size: 30px;
 }
 .img_div,
-img {
+.logo {
 margin-left: 7%;
 transition: all .3s linear;
 }
-.img_div, img:hover{
+.img_div, .logo:hover{
     transform: scale(1.2);
 }
 .bullet_points {
-    box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8),
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+    box-shadow: 12px 0 15px -4px rgba(60, 75, 94, 0.8),
     -12px 0 8px -4px rgba(31, 73, 125, 0.8);
     margin-top: 150px;
-  background: linear-gradient(rgba(0, 17, 255, 0.801), rgba(48, 80, 168, 0.5)),
+  background: linear-gradient(rgba(0, 38, 255, 0.747), rgba(48, 80, 168, 0.5)),
     url("../Images/responsive_design.jpeg");
   background-position: center;
   background-repeat: no-repeat;
@@ -74,4 +90,91 @@ li {
 .content_container-1 {
   display: flex;
   width: 100%;
+}
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .image_div {
+      box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8),
+        -12px 0 8px -4px rgba(31, 73, 125, 0.8);
+     width: 40%;
+     border-bottom: 20%;
+     margin-top: 150px;
+     background-color: rgb(241, 239, 239);
+    }
+    .img_div:hover {
+      transform: scale(1.2);
+    }
+    
+    .h3 {
+      margin-left: -450px;
+      width: 900px;
+      margin-top: -100px;
+      list-style-type: none;
+      font-size: 30px;
+    }
+    .img_div,
+    img {
+    margin-left: 7%;
+    transition: all .3s linear;
+    }
+    .img_div, img:hover{
+        transform: scale(1.2);
+    }
+    .bullet_points {
+        box-shadow: 12px 0 15px -4px rgba(60, 75, 94, 0.8),
+        -12px 0 8px -4px rgba(31, 73, 125, 0.8);
+        margin-top: 150px;
+      background: linear-gradient(rgba(0, 38, 255, 0.747), rgba(48, 80, 168, 0.5)),
+        url("../Images/responsive_design.jpeg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: all .3s linear;
+      width: 60%;
+    }
+    
+    
+    
+    .bullet_points:hover{
+        background: linear-gradient(rgba(0, 17, 255, 0.801), rgba(109, 104, 104, 0.5)),
+        url("../Images/responsive_design.jpeg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    ul {
+      position: absolute;
+      width: 200px;
+      top: 50%;
+      left: 75%;
+      transform: translate(-50%, -50%);
+      color: rgb(255, 255, 255);
+      text-align: center;
+    }
+    
+    li {
+      margin: 5px;
+      margin-bottom: 20px;
+      margin-right: 100px;
+      width: 300px;
+      transition: all .3s linear;
+      font-size: 20px;
+      color: rgb(255, 255, 255);
+    }
+    .list_item:hover{
+        transform: scale(1.2);
+    }
+    
+    .content_container-1 {
+      display: flex;
+      width: 100%;
+    }
+    
+
 }

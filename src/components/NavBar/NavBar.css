@@ -29,7 +29,7 @@ img{
 }
 
 .ul {
-    width: 400px;
+    width: 600px;
     display: flex;
     justify-content: flex-end;
     color: rgb(0, 16, 247);
@@ -40,9 +40,25 @@ img{
 
 .ul2 {
     display: flex;
-    width: 500px;
+    align-items: center;
+    width: 800px;
     justify-content: flex-end;
     color: rgb(0, 37, 250);
     font-size: 20px;
+    text-decoration: none;
+}
+
+#facebook{
+    font-size: 40px;
+    text-decoration: none;
+    margin-left: 30px;
+    color:rgb(0, 0, 255)
+}
+
+#facebook:hover{
+    color: grey;
+}
+
+.a{
     text-decoration: none;
 }

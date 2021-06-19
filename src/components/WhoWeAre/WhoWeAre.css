@@ -5,8 +5,18 @@
     width: 80%;
     margin-left: 10%;
     margin-top: 100px;
+    margin-bottom: 200px;
 }
-
+.rrocket{
+   
+    overflow: hidden;
+    animation-fill-mode: forwards;
+    height: 400px;
+    width: 400px;
+    margin-top: -300px;
+    margin-left:300px;
+    margin-bottom:50px;
+}
 .wrapper_div{
     display: flex;
     justify-content: center;
@@ -21,10 +31,11 @@
 }
 
 .details_p{
- width: 40%;
+ width: 45%;
  font-size: 20px;
- color: rgb(126, 122, 122);
+ color: rgb(107, 105, 105);
  text-align: center;
  
  margin-left: 30px;
+ margin-bottom: 200px;
 }

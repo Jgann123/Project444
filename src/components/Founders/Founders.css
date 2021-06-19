@@ -1,0 +1,38 @@
+#jeremy{
+    border-radius: 70px;
+}
+
+#tim{
+    
+    border-radius: 70px;
+}
+
+.images_div{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image_div3{
+    width: 600px;
+    height: 300px;
+    margin-left: 60px;
+    background: rgb(245, 245, 245);
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 8px 4px -4px rgb(0, 0, 255);
+}
+
+
+
+.main_div{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+#p-tag{
+    text-align: center;
+    color: #ffff;
+}
+
