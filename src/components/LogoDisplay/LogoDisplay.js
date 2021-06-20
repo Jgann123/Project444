@@ -1,6 +1,5 @@
 import React from 'react'
 import Logo from '../Images/Logo.png'
-import Image from '../Images/responsive_design.jpeg'
 import './LogoDisplay.css'
 
 

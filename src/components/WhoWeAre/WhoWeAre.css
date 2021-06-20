@@ -39,3 +39,47 @@
  margin-left: 30px;
  margin-bottom: 200px;
 }
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+    .details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 80%;
+    }
+
+
+    .details_headline{
+        width: 99%;
+        font-size: 30px;
+        color: rgb(0, 29, 190);
+        text-align: center;
+        margin-right: 120px;
+        margin-bottom: 20px;
+       }
+
+       .details_p{
+       
+         margin-left: -0px;
+        width: 99%;
+        font-size: 20px;
+        color: rgb(107, 105, 105);
+        text-align: center;
+        margin-bottom: 200px;
+       }
+
+       .rrocket{
+   
+        overflow: hidden;
+        animation-fill-mode: forwards;
+        height: 400px;
+        width: 400px;
+        margin-top: -300px;
+        margin-left: -0px;
+        margin-bottom:50px;
+    }
+  }

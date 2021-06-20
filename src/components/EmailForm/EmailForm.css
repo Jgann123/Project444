@@ -1,58 +1,36 @@
-#section{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: 1400px;
-    width: 100%;
-    background-color: rgb(76, 76, 233);
-    border-radius: 30px;
-    height: 100%;
-    margin-top: -100px;
-    margin-bottom: 100px;
-    align-items: center;
-    text-align:center;
-    box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8),
-    -12px 0 8px -4px rgba(31, 73, 125, 0.8);
-
+#main2{
+margin-left: 50%;
+ width: 600px;
 }
 
-#container{
-    display:flex;
-    justify-content: flex-end;
+#form{
+ flex-direction: column;
+ margin-left: 750px;
 }
 
-#p{
+#name{
+ width: 500px;
+}
+.form_title{
+    color: #ffff;
+    width: 600px;
+}
+
+
+
+Header{
+    
     color: #ffff;
 }
-
-#contact_button{
-    border: none;
-    border-radius: 10px;
-    background-color: #ffff;
-    font-size: 20px;
-    width: 200px;
-    height: 50px;
-    color: rgb(6, 6, 201);
+#email{
+width: 500px;
 }
 
-
-
-#other{
-    display: flex;
-    justify-content: center;
-    width: 700px;
-    justify-content: space-around;
-}
-
-.title{
-    color: #ffff;
-}
-
-#message{
-    margin-top: 50px;
-    height: 100px;
-    margin-bottom: 20px;
-}
 #subject{
-    margin-top: 30px;
+ width: 500px;
+}
+
+#content{
+ width: 500px;
+ height: 200px;
 }

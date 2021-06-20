@@ -39,3 +39,17 @@
 .par_container{
   
 }
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3){
+
+    #main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: -45px;
+    }
+
+  }

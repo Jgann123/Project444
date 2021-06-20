@@ -1,101 +1,63 @@
-import React from 'react';
-import axios from 'axios';
+import React, { Component } from 'react'
+import { Button, Form, Container, Header } from 'semantic-ui-react'
 import './EmailForm.css'
-class EmailForm extends React.Component {
+import axios from 'axios'
 
-    constructor(props) {
-        super(props);
-        this.state = {
-          name: '',
-          email: '',
-          subject:'',
-          message: ''
-        }
+export default class EmailForm extends Component {
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+       name: '',
+       email: '',
+       subject: '',
+       content: ''
     }
-    submitEmail(e){
-        e.preventDefault();
-        axios({
-          method: "POST", 
-          url:"/send", 
-          data:  this.state
-        }).then((response)=>{
-          if (response.data.status === 'success'){
-              alert("Message Sent."); 
-              this.resetForm()
-          }else if(response.data.status === 'fail'){
-              alert("Message failed to send.")
-          }
-        })
-}
-
-resetForm(){
-        this.setState({name: '', email: '',subject:'', message: ''})
-}
-    onNameChange(event) {
-        this.setState({name: event.target.value})
-    }
-
-    onEmailChange(event) {
-        this.setState({email: event.target.value})
-    }
-
-    onSubjectChange(event) {
-        this.setState({subject: event.target.value})
-    }
-
-    onMsgChange(event) {
-        this.setState({message: event.target.value})
-    }
-  render() {
-    return(
-        <div id="section" className="section">
-        <div id="container" className="container">
-            <div className="row">
-                <div id="other" className="col-md-12">
-                    <div className="section-title">
-                        <h2 className="title">Tell us your idea.</h2>
-                      <hr/>
-                        <form id="contact-form" onSubmit={this.submitEmail.bind(this)} 
-                            method="POST">
-                        <div className="form-group">
-                        <div className="row">
-                        <div className="col-md-6">
-                            <input placeholder = "Name"  id="name" type="text" 
-                               className="form-control" required value={this.state.name} 
-                               onChange={this.onNameChange.bind(this)}/>
-                        </div>
-                        <div className="col-md-6">
-                            <input placeholder = "Email"  id="email" type="email"
-                              className="form-control" aria-describedby="emailHelp"
-                              required value={this.state.email} onChange=
-                              {this.onEmailChange.bind(this)}/>
-                        </div>
-                        </div>
-                        </div>
-                        <div className="form-group">
-                            <input placeholder = "Subject"  id="subject" type="text"
-                              className="form-control" required value={this.state.subject}
-                              onChange={this.onSubjectChange.bind(this)}/>
-                        </div>
-                        <div className="form-group">
-                            <textarea placeholder = "Message"  id="message" 
-                               className="form-control" rows="1" 
-                               required value={this.state.message}
-                               onChange= {this.onMsgChange.bind(this)}/>
-                        </div>
-                        <button id="contact_button" type="submit" className="primary-btn submit">Submit</button>
-                        </form>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-    );
   }
 
-  
+  changeHandler = (e) => {
+    this.setState({[e.target.name] : e.target.value})
+  }
+
+  submitHandler = e => {
+    e.preventDefault();
+    console.log(this.state);
+
+    axios.post('https://sheet.best/api/sheets/d41d153d-585c-40a1-8c4a-4af6b9c80541', this.state)
+    .then(response => {
+        alert("success!!")
+      console.log(response);
+    })
+  }
+  render() {
+    const { name, email, subject, content } = this.state;    
+    return (
+      <Container id="main2" fluid className="container">
+        
+        <Form id="form" lassName="form" onSubmit={this.submitHandler}>
+        <Header className="form_title" style={{color: '#ffff'}} as='h2'>How can we help!</Header>
+          <Form.Field>
+            <label  style={{color: '#ffff'}} >Name</label>
+            <input id="name" placeholder='Enter your name' type="text" name = "name" value = {name} onChange={this.changeHandler}/>
+          </Form.Field>
+          <Form.Field>
+            <label  style={{color: '#ffff'}} >Email</label>
+            <input id="email" placeholder='Enter your email' type="text" name = "email" value = {email} onChange={this.changeHandler}/>
+          </Form.Field>
+          <Form.Field>
+            <label  style={{color: '#ffff'}} >Subject</label>
+            <input id="subject" placeholder='Subject' type="text" name = "subject" value = {subject} onChange={this.changeHandler}/>
+          </Form.Field>
+          <Form.Field>
+            <label  style={{color: '#ffff'}} >Content</label>
+            <input id="content" placeholder='Tell us more!' rows="5" cols="60" type="text" name = "content" value = {content} onChange={this.changeHandler}/>
+          </Form.Field>
+          
+          <Button color="blue" type='submit'>Submit</Button>
+        </Form>
+      </Container>
+    )
+  }
 }
 
-export default EmailForm;
+

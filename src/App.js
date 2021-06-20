@@ -1,8 +1,7 @@
 import LogoDisplay from "./components/LogoDisplay/LogoDisplay";
 import NavBar from "./components/NavBar/NavBar";
 import './App.css'
-import React, { useState, useEffect } from 'react';
-import { Icon } from "semantic-ui-react";
+import React from 'react';
 import BusinessIcon from '@material-ui/icons/Business';
 import ImportantDevicesIcon from '@material-ui/icons/ImportantDevices';
 import WhoAreWe from '../src/components/WhoWeAre/WhoWeAre'
@@ -10,10 +9,7 @@ import CardDisplay from '../src/components/cards/CardDisplay'
 import PhonelinkSetupIcon from '@material-ui/icons/PhonelinkSetup';
 import H1 from "./components/H1/H1";
 import Footer from '../src/components/Footer/Footer'
-import EmailForm from '../src/components/EmailForm/EmailForm'
-import ModalDisplay from "./components/Modal/ModalDisplay";
 import WhyUs from "./components/WhyChooseUs/WhyUs";
-import Founders from "./components/Founders/Founders";
 
 
 

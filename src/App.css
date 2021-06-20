@@ -18,3 +18,21 @@ body[data-aos-duration='4000'] [data-aos], [data-aos][data-aos][data-aos-duratio
 .icon{
     height: 50px;
 }
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3){
+
+    .display{
+        display: flex;
+        flex-direction: column;
+        margin-left: -50px;
+    }
+
+    .icon{
+        margin-left: 45px;
+        height: 50px;
+    }
+
+  }

@@ -1,7 +1,5 @@
 import React from 'react'
-import Image from './res.png'
 import './CardDisplay.css'
-import icon from './icon.png'
 import ModalDisplay from '../Modal/ModalDisplay'
 
 function CardDisplay(props) {
@@ -15,7 +13,8 @@ function CardDisplay(props) {
           
             <p>{props.Content}</p>
 
-                 <strong><button className="est_button">  <ModalDisplay /> </button></strong>
+                 <strong className="j"><button className="est_button">  <ModalDisplay /> </button></strong>
+                 <strong className="consuuu"> <a className="a" href = "mailto: contact@softsquare.com">Free Consultation <i id="facebook" class="envelope icon"></i></a></strong>
                  </div>
         </div>
         </div>

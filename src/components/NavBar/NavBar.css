@@ -28,8 +28,22 @@ img{
     justify-content: flex-start;
 }
 
+.Oest_button{
+    border: none;
+    height: 40px;
+    font-size: 17px;
+    margin-left: 1000px;
+    width: 200px;
+    margin-top: -420px;
+    border-radius: 5px;
+    background-color: rgb(26, 96, 247);
+    color: rgb(255, 255, 255);
+   
+   
+}
+
 .ul {
-    width: 600px;
+    width: 900px;
     display: flex;
     justify-content: flex-end;
     color: rgb(0, 16, 247);
@@ -61,4 +75,56 @@ img{
 
 .a{
     text-decoration: none;
+}
+
+#telly{
+    font-size: 40px;
+    color:rgb(0, 0, 255); 
+    align-items: center;
+    margin-bottom: 18px;  
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .nav_bar{
+        position: fixed;
+        width: 100%;
+        height: 90px;
+         transition: top 0.3s;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 1.2rem;
+    
+        box-shadow: 0 8px 4px -4px rgb(0, 0, 255);
+    }
+
+    .nav_logo{
+        display: none;
+        margin-left: -300px;
+        align-items: center;
+        margin-top: 30px;
+        margin-right: 1150px;
+        justify-content: flex-start;
+        height: 200px;
+        width: 200px;
+    }
+
+   
+
+    .ul {
+        width: 300px;
+        display: flex;
+        margin-left: -70px;
+        justify-content: center;
+        color: rgb(0, 16, 247);
+        font-size: 5px;
+        text-decoration: none;
+    }
+    
+
+    
 }
