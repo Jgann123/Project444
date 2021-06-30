@@ -21,7 +21,7 @@
     background: rgb(245, 245, 245);
     border-radius: 40px;
     text-align: center;
-    box-shadow: 0 8px 4px 1px rgb(0, 0, 255);
+    box-shadow: 0 8px 4px 1px rgb(0, 183, 255);
 }
 
 
@@ -57,10 +57,10 @@ and (-webkit-min-device-pixel-ratio: 3) {
         height: 550px;
         margin-bottom: 30px;
         margin-left: 52px;
-        background: rgb(245, 245, 245);
+      
         border-radius: 40px;
         text-align: center;
-        box-shadow: 0 8px 4px 1px rgb(0, 0, 255);
+        
     }
     
 }

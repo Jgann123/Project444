@@ -9,7 +9,8 @@
     width: 200px;
     justify-content: center;
     margin-bottom: 50px;
-    color: rgb(0, 102, 255);
+    color: rgb(255, 187, 0);
+    text-shadow: 2px 2px #ff0000;
 }
 
 #par{

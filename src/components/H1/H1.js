@@ -3,7 +3,7 @@ import './H1.css'
 function H1() {
     return (
         <div>
-            <h1 className="H1">What We Do...</h1>
+            <h1 className="H1">Some Specifics...</h1>
         </div>
     )
 }

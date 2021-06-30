@@ -32,7 +32,10 @@
 }
 .img_div,
 .logo {
-margin-left: 7%;
+  margin-left: -150px;
+margin-right: 35%;
+width: 900px;
+height: 500px;
 transition: all .3s linear;
 }
 .img_div, .logo:hover{
@@ -42,11 +45,11 @@ transition: all .3s linear;
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-    box-shadow: 12px 0 15px -4px rgba(60, 75, 94, 0.8),
-    -12px 0 8px -4px rgba(31, 73, 125, 0.8);
+    box-shadow: 12px 0 15px -4px rgba(252, 143, 0, 0.8),
+    -12px 0 8px -4px rgba(255, 174, 0, 0.8);
     margin-top: 150px;
-  background: linear-gradient(rgba(0, 38, 255, 0.747), rgba(48, 80, 168, 0.5)),
-    url("../Images/responsive_design.jpeg");
+  background: linear-gradient(rgba(7, 156, 255, 0.747), rgba(171, 177, 89, 0.5)),
+    url("../Images/Game_tech.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -57,8 +60,8 @@ transition: all .3s linear;
 
 
 .bullet_points:hover{
-    background: linear-gradient(rgba(0, 17, 255, 0.801), rgba(109, 104, 104, 0.5)),
-    url("../Images/responsive_design.jpeg");
+    background: linear-gradient(rgba(134, 151, 48, 0.801), rgba(109, 104, 104, 0.5)),
+    url("../Images/Game_tech.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -67,7 +70,7 @@ transition: all .3s linear;
 ul {
   position: absolute;
   width: 200px;
-  top: 50%;
+  top: 55%;
   left: 75%;
   transform: translate(-50%, -50%);
   color: rgb(255, 255, 255);
@@ -109,8 +112,7 @@ li {
     
     .image_div {
      
-      box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8),
-        -12px 0 8px -4px rgba(31, 73, 125, 0.8);
+
      width: 100%;
      border-bottom: 20%;
      margin-top: 150px;
@@ -128,6 +130,8 @@ li {
 
     .img_div,
 .logo {
+  width: 500px;
+  height: 300px;
 margin-left: -45px;
 transition: all .3s linear;
 }

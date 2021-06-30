@@ -1,5 +1,7 @@
-body[data-aos-duration='4000'] [data-aos], [data-aos][data-aos][data-aos-duration='4000']{
-    transition-duration: 4000ms;
+body{
+
+margin: 0;
+padding: 0;
   }
 
 .lg{
@@ -10,6 +12,7 @@ body[data-aos-duration='4000'] [data-aos], [data-aos][data-aos][data-aos-duratio
 .display{
 
  margin-bottom: 20px;
+
  display: flex;
  justify-content: center;
  color: rgb(141, 141, 141);
@@ -17,6 +20,17 @@ body[data-aos-duration='4000'] [data-aos], [data-aos][data-aos][data-aos-duratio
 
 .icon{
     height: 50px;
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+    .mobiles_lottie{
+      display: none;
+      
+    }
 }
 
 @media only screen 
@@ -27,7 +41,12 @@ body[data-aos-duration='4000'] [data-aos], [data-aos][data-aos][data-aos-duratio
     .display{
         display: flex;
         flex-direction: column;
+        margin-right:-150px;
         margin-left: -50px;
+    }
+    .mobiles_lottie{
+      margin-bottom: -30px;
+      margin-left: 140px;
     }
 
     .icon{

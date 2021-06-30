@@ -1,7 +1,6 @@
 import React from 'react'
 import './WhoWeAre.css'
-import Rocket from './cool2.png'
-import ModalDisplay from '../Modal/ModalDisplay'
+import RocketLottie from '../RocketLottie/RocketLottie'
 
 const  WhoWeAre = () => {
   
@@ -12,16 +11,15 @@ const  WhoWeAre = () => {
             <h1 className="details_headline">Services Tailor-Made for your business</h1>
     
             <p className="details_p">"We build custom software that is specifically designed to target the challenges and needs of your business.
-                With cross-functionail teams we work with you every step of the process to design, build, and launch
+                With cross-functional teams we work with you every step of the process to design, build, and launch
                 just what your business needs, delivering technology-driven products, services, and systems to
-                solve your biggest to smallest problems. It is our aim to serve our customers with excellence. 
-                We know the most successful people are the most selfless, and we make it our aim to see our customers succeed
-                by providing our technical services with honestly and excellence. "</p>
-            
+                solve your problems big and small. We know the most successful people are the most selfless, and we make it our aim to see our customers succeed
+                by providing our technical services with honestly and excellence. " <p className="keywords">software developers near me. webdesigners near me. mobile apps in Morristown,TN. Mobile apps in Knoxville, TN. Software developers in Johnson City. Logo Makers in East TN. Websites in East TN. </p></p>
+                  
         </div>
-        <strong><button className="Oest_button">  <ModalDisplay /> </button></strong>
-        <img  className="rrocket" src={Rocket} alt="" />
-        <hr></hr>
+       
+        <div  className="rrocket"><RocketLottie /></div>
+       
         </div>
   
     )

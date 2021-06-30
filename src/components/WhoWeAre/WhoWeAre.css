@@ -7,13 +7,31 @@
     margin-top: 100px;
     margin-bottom: 200px;
 }
+.Oest_button3{
+    border: none;
+    height: 40px;
+    font-size: 17px;
+    margin-left: 1000px;
+    width: 200px;
+    margin-top: -990px;
+    margin-bottom:  200px;
+    border-radius: 5px;
+    background-color: rgb(26, 96, 247);
+    color: rgb(255, 255, 255);
+   
+   
+}
+
+.keywords{
+    color: rgba(255, 255, 255, 0);
+}
 .rrocket{
    
     overflow: hidden;
     animation-fill-mode: forwards;
     height: 400px;
     width: 400px;
-    margin-top: -300px;
+    margin-top: -420px;
     margin-left:300px;
     margin-bottom:50px;
 }
@@ -25,7 +43,8 @@
 .details_headline{
  width: 40%;
  font-size: 40px;
- color: rgb(0, 29, 190);
+ color: rgb(255, 187, 0);
+ text-shadow: 2px 2px #ff0000;
  text-align: center;
  margin-right: 120px;
 }
@@ -35,9 +54,9 @@
  font-size: 20px;
  color: rgb(107, 105, 105);
  text-align: center;
- 
+
  margin-left: 30px;
- margin-bottom: 200px;
+ margin-bottom: -50px;
 }
 
 @media only screen 
@@ -56,7 +75,7 @@
     .details_headline{
         width: 99%;
         font-size: 30px;
-        color: rgb(0, 29, 190);
+      
         text-align: center;
         margin-right: 120px;
         margin-bottom: 20px;
@@ -67,7 +86,7 @@
          margin-left: -0px;
         width: 99%;
         font-size: 20px;
-        color: rgb(107, 105, 105);
+       
         text-align: center;
         margin-bottom: 200px;
        }
@@ -79,7 +98,10 @@
         height: 400px;
         width: 400px;
         margin-top: -300px;
-        margin-left: -0px;
+        margin-left: 80px;
         margin-bottom:50px;
+    }
+    .Oest_button3{
+        display: none;
     }
   }
